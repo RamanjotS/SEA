@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Stock Data</h1>
+  <select id="dropDown">
+    <option value="default">Select an option</option>
+    <option value="nameAZ">Sort by name (A-Z)</option>
+    <option value="nameZA">Sort by name (Z-A)</option>
+    <option value="priceAsc">Sort by price (ascending)</option>
+    <option value="priceDesc">Sort by price (descending)</option>
+  </select>
+  <input type="text" id="search" placeholder="Search for a stock...">
+  <ul id="stockList"></ul>
+  <button id="addStockFormButton">Add New Stock</button>
+  <div id="addStockForm" style="display: none;">
+    <input type="text" id="newTicker" placeholder="Example: SNAP">
+    <input type="text" id="newName" placeholder="Example: Snapchat">
+    <input type="number" id="newPrice" placeholder="Example: 123.45">
+    <input type="number" id="newChange" placeholder="Example: 0.12">
+    <button id="submitButton">Submit</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
